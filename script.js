@@ -1,3 +1,6 @@
+//hide task before adding new
+$(".not-completed .task , .completed .task").addClass("hide");
+
 var input = $("input");
 
 input.keyup(function (e) {
