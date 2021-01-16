@@ -14,7 +14,10 @@ input.keyup(function (e) {
       });
     });
 
-    var check = $('<i class="fas fa-check"/>');
+    var check = $('<i class="fas fa-check"/>').click(function () {
+      var checked = $(this).parent();
+      $(".completed").append(checked);
+    });
 
     task.append(del, check);
 
