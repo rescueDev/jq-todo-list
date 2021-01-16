@@ -21,7 +21,8 @@ body {
 
 header {
   height: 80px;
-  border: 1px solid black;
+  /*   border: 1px solid black;
+ */
   width: 100%;
   display: flex;
 }
@@ -41,16 +42,25 @@ input:focus {
   outline: none;
 }
 
+h2 {
+  margin-top: 20px;
+}
+
 .task {
   border: 1px solid black;
   width: 100%;
   padding: 16px;
+  margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .task i {
   float: right;
   margin-left: 20px;
+}
+
+.task i:hover {
+  cursor: pointer;
 }
 
 .completed .task {
