@@ -17,8 +17,9 @@ input.keyup(function (e) {
     var check = $('<i class="fas fa-check"/>').click(function () {
       var checked = $(this).parent();
       $(this).hide();
-      checked.fadeIn(function () {
+      checked.fadeOut(function () {
         $(".completed").append(checked);
+        checked.fadeIn();
       });
     });
 
