@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 10px auto;
+  width: 80%;
+}
+
+header {
+  height: 80px;
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+}
+
+input {
+  width: 80%;
+  margin: 10px auto;
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.task {
+  border: 1px solid black;
+  width: 100%;
+  padding: 16px;
+}
+
+.task i {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Classes jQuery */
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
