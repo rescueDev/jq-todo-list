@@ -16,12 +16,15 @@ input.keyup(function (e) {
 
     var check = $('<i class="fas fa-check"/>').click(function () {
       var checked = $(this).parent();
-      $(".completed").append(checked);
+      $(this).hide();
+      checked.fadeIn(function () {
+        $(".completed").append(checked);
+      });
     });
 
     task.append(del, check);
 
-    //delete single task});
+    //add task to not completed on enter
     $(".not-completed").append(task);
     input.val("");
   }
